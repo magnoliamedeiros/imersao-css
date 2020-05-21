@@ -10,19 +10,22 @@ body {
 }
 
 .menu ul {
-  display: flex;
+  display: flex; /* Força tudo virar coluna */
   justify-content: space-around;
 }
 
+/* Seletor específico - remover os pontinhos dos li que estão na classe menu */
 .menu li {
   list-style: none;
 }
 
+/* Primeiro removemos o traço dos links */
 a {
   color: teal;
   text-decoration: none;
 }
 
+/* Em seguida mostraremos o traço apenas quando passar o mouse por cima do link (assunto: pseudo-classe CSS) */
 a:hover {
   text-decoration: underline;
 }
